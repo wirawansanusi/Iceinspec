@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99766F471CCABC3E00971E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F461CCABC3E00971E1F /* AppDelegate.swift */; };
+		99766F491CCABC3E00971E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F481CCABC3E00971E1F /* ViewController.swift */; };
+		99766F4C1CCABC3E00971E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99766F4A1CCABC3E00971E1F /* Main.storyboard */; };
+		99766F4F1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99766F4D1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld */; };
+		99766F511CCABC3E00971E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99766F501CCABC3E00971E1F /* Assets.xcassets */; };
+		99766F541CCABC3E00971E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99766F521CCABC3E00971E1F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceAppsChallenge2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99766F461CCABC3E00971E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99766F481CCABC3E00971E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99766F4B1CCABC3E00971E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99766F4E1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceAppsChallenge2016.xcdatamodel; sourceTree = "<group>"; };
+		99766F501CCABC3E00971E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99766F531CCABC3E00971E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99766F551CCABC3E00971E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99766F401CCABC3E00971E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99766F3A1CCABC3E00971E1F = {
+			isa = PBXGroup;
+			children = (
+				99766F451CCABC3E00971E1F /* SpaceAppsChallenge2016 */,
+				99766F441CCABC3E00971E1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99766F441CCABC3E00971E1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99766F451CCABC3E00971E1F /* SpaceAppsChallenge2016 */ = {
+			isa = PBXGroup;
+			children = (
+				99766F461CCABC3E00971E1F /* AppDelegate.swift */,
+				99766F481CCABC3E00971E1F /* ViewController.swift */,
+				99766F4A1CCABC3E00971E1F /* Main.storyboard */,
+				99766F501CCABC3E00971E1F /* Assets.xcassets */,
+				99766F521CCABC3E00971E1F /* LaunchScreen.storyboard */,
+				99766F551CCABC3E00971E1F /* Info.plist */,
+				99766F4D1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld */,
+			);
+			path = SpaceAppsChallenge2016;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99766F421CCABC3E00971E1F /* SpaceAppsChallenge2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "SpaceAppsChallenge2016" */;
+			buildPhases = (
+				99766F3F1CCABC3E00971E1F /* Sources */,
+				99766F401CCABC3E00971E1F /* Frameworks */,
+				99766F411CCABC3E00971E1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceAppsChallenge2016;
+			productName = SpaceAppsChallenge2016;
+			productReference = 99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99766F3B1CCABC3E00971E1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Protogres;
+				TargetAttributes = {
+					99766F421CCABC3E00971E1F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "SpaceAppsChallenge2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99766F3A1CCABC3E00971E1F;
+			productRefGroup = 99766F441CCABC3E00971E1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99766F421CCABC3E00971E1F /* SpaceAppsChallenge2016 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99766F411CCABC3E00971E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99766F541CCABC3E00971E1F /* LaunchScreen.storyboard in Resources */,
+				99766F511CCABC3E00971E1F /* Assets.xcassets in Resources */,
+				99766F4C1CCABC3E00971E1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99766F3F1CCABC3E00971E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99766F4F1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld in Sources */,
+				99766F491CCABC3E00971E1F /* ViewController.swift in Sources */,
+				99766F471CCABC3E00971E1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		99766F4A1CCABC3E00971E1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99766F4B1CCABC3E00971E1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99766F521CCABC3E00971E1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99766F531CCABC3E00971E1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99766F561CCABC3E00971E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99766F571CCABC3E00971E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99766F591CCABC3E00971E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SpaceAppsChallenge2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99766F5A1CCABC3E00971E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SpaceAppsChallenge2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "SpaceAppsChallenge2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99766F561CCABC3E00971E1F /* Debug */,
+				99766F571CCABC3E00971E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "SpaceAppsChallenge2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99766F591CCABC3E00971E1F /* Debug */,
+				99766F5A1CCABC3E00971E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99766F4D1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99766F4E1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodel */,
+			);
+			currentVersion = 99766F4E1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodel */;
+			path = SpaceAppsChallenge2016.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 99766F3B1CCABC3E00971E1F /* Project object */;
+}
