@@ -1,0 +1,6 @@
+framework module CLLocationManager_blocks {
+  umbrella header "CLLocationManager-blocks-umbrella.h"
+
+  export *
+  module * { export * }
+}

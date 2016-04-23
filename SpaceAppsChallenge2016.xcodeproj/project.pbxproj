@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63596DDBECFB7273A1B18266 /* Pods_SpaceAppsChallenge2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AC1DF04327871BFF9EE96B /* Pods_SpaceAppsChallenge2016.framework */; };
+		9944294D1CCBC82A000FF60D /* SeaIce+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994429491CCBC82A000FF60D /* SeaIce+CoreDataProperties.swift */; };
+		9944294E1CCBC82A000FF60D /* SeaIce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944294A1CCBC82A000FF60D /* SeaIce.swift */; };
+		9944294F1CCBC82A000FF60D /* Sensors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944294B1CCBC82A000FF60D /* Sensors+CoreDataProperties.swift */; };
+		994429501CCBC82A000FF60D /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944294C1CCBC82A000FF60D /* Sensors.swift */; };
+		994429521CCBD113000FF60D /* SeaIceTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994429511CCBD113000FF60D /* SeaIceTemp.swift */; };
+		994429561CCBEE07000FF60D /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994429551CCBEE07000FF60D /* Annotation.swift */; };
+		994429581CCBEF42000FF60D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994429571CCBEF42000FF60D /* MapViewController.swift */; };
+		9944295A1CCBF52E000FF60D /* SensorsTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994429591CCBF52E000FF60D /* SensorsTemp.swift */; };
+		9944295C1CCC0298000FF60D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944295B1CCC0298000FF60D /* HistoryViewController.swift */; };
 		99766F471CCABC3E00971E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F461CCABC3E00971E1F /* AppDelegate.swift */; };
-		99766F491CCABC3E00971E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F481CCABC3E00971E1F /* ViewController.swift */; };
 		99766F4C1CCABC3E00971E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99766F4A1CCABC3E00971E1F /* Main.storyboard */; };
 		99766F4F1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99766F4D1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld */; };
 		99766F511CCABC3E00971E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99766F501CCABC3E00971E1F /* Assets.xcassets */; };
 		99766F541CCABC3E00971E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99766F521CCABC3E00971E1F /* LaunchScreen.storyboard */; };
+		99766F621CCB55B300971E1F /* BluetoothDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F611CCB55B300971E1F /* BluetoothDebugViewController.swift */; };
+		99766F641CCB55E200971E1F /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F631CCB55E200971E1F /* BluetoothSerial.swift */; };
+		99766F691CCBA95C00971E1F /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99766F681CCBA95C00971E1F /* SensorViewController.swift */; };
+		99766F6B1CCBC20C00971E1F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 99766F6A1CCBC20C00971E1F /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AEA0D9A340F52A3962D1059 /* Pods-SpaceAppsChallenge2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceAppsChallenge2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceAppsChallenge2016/Pods-SpaceAppsChallenge2016.release.xcconfig"; sourceTree = "<group>"; };
+		994429491CCBC82A000FF60D /* SeaIce+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SeaIce+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9944294A1CCBC82A000FF60D /* SeaIce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaIce.swift; sourceTree = "<group>"; };
+		9944294B1CCBC82A000FF60D /* Sensors+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sensors+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9944294C1CCBC82A000FF60D /* Sensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensors.swift; sourceTree = "<group>"; };
+		994429511CCBD113000FF60D /* SeaIceTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaIceTemp.swift; sourceTree = "<group>"; };
+		994429551CCBEE07000FF60D /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		994429571CCBEF42000FF60D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		994429591CCBF52E000FF60D /* SensorsTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTemp.swift; sourceTree = "<group>"; };
+		9944295B1CCC0298000FF60D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceAppsChallenge2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99766F461CCABC3E00971E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99766F481CCABC3E00971E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99766F4B1CCABC3E00971E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99766F4E1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceAppsChallenge2016.xcdatamodel; sourceTree = "<group>"; };
 		99766F501CCABC3E00971E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99766F531CCABC3E00971E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99766F551CCABC3E00971E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99766F611CCB55B300971E1F /* BluetoothDebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDebugViewController.swift; sourceTree = "<group>"; };
+		99766F631CCB55E200971E1F /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		99766F681CCBA95C00971E1F /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		99766F6A1CCBC20C00971E1F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B4AC1DF04327871BFF9EE96B /* Pods_SpaceAppsChallenge2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppsChallenge2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F8BE195F5E62B14716E7D0 /* Pods-SpaceAppsChallenge2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceAppsChallenge2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceAppsChallenge2016/Pods-SpaceAppsChallenge2016.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63596DDBECFB7273A1B18266 /* Pods_SpaceAppsChallenge2016.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A495F5D0E3238E70865055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4AC1DF04327871BFF9EE96B /* Pods_SpaceAppsChallenge2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99766F3A1CCABC3E00971E1F = {
 			isa = PBXGroup;
 			children = (
 				99766F451CCABC3E00971E1F /* SpaceAppsChallenge2016 */,
 				99766F441CCABC3E00971E1F /* Products */,
+				F570C8A4E930B3759BA85151 /* Pods */,
+				16A495F5D0E3238E70865055 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +95,12 @@
 		99766F451CCABC3E00971E1F /* SpaceAppsChallenge2016 */ = {
 			isa = PBXGroup;
 			children = (
+				99766F651CCB55E800971E1F /* Service */,
+				99766F5E1CCB54DC00971E1F /* View */,
+				99766F5D1CCB54CB00971E1F /* Resource */,
+				99766F5C1CCB54B000971E1F /* ViewController */,
+				99766F5B1CCB54A900971E1F /* Model */,
 				99766F461CCABC3E00971E1F /* AppDelegate.swift */,
-				99766F481CCABC3E00971E1F /* ViewController.swift */,
 				99766F4A1CCABC3E00971E1F /* Main.storyboard */,
 				99766F501CCABC3E00971E1F /* Assets.xcassets */,
 				99766F521CCABC3E00971E1F /* LaunchScreen.storyboard */,
@@ -67,6 +110,63 @@
 			path = SpaceAppsChallenge2016;
 			sourceTree = "<group>";
 		};
+		99766F5B1CCB54A900971E1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				994429491CCBC82A000FF60D /* SeaIce+CoreDataProperties.swift */,
+				9944294A1CCBC82A000FF60D /* SeaIce.swift */,
+				9944294B1CCBC82A000FF60D /* Sensors+CoreDataProperties.swift */,
+				9944294C1CCBC82A000FF60D /* Sensors.swift */,
+				994429511CCBD113000FF60D /* SeaIceTemp.swift */,
+				994429551CCBEE07000FF60D /* Annotation.swift */,
+				994429591CCBF52E000FF60D /* SensorsTemp.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		99766F5C1CCB54B000971E1F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99766F611CCB55B300971E1F /* BluetoothDebugViewController.swift */,
+				99766F681CCBA95C00971E1F /* SensorViewController.swift */,
+				994429571CCBEF42000FF60D /* MapViewController.swift */,
+				9944295B1CCC0298000FF60D /* HistoryViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		99766F5D1CCB54CB00971E1F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				99766F6A1CCBC20C00971E1F /* data.json */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		99766F5E1CCB54DC00971E1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		99766F651CCB55E800971E1F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				99766F631CCB55E200971E1F /* BluetoothSerial.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F570C8A4E930B3759BA85151 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8BE195F5E62B14716E7D0 /* Pods-SpaceAppsChallenge2016.debug.xcconfig */,
+				7AEA0D9A340F52A3962D1059 /* Pods-SpaceAppsChallenge2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "SpaceAppsChallenge2016" */;
 			buildPhases = (
+				5FBE65695976C11FBC614900 /* Check Pods Manifest.lock */,
 				99766F3F1CCABC3E00971E1F /* Sources */,
 				99766F401CCABC3E00971E1F /* Frameworks */,
 				99766F411CCABC3E00971E1F /* Resources */,
+				4A3855C704C208B2A32AAA61 /* Embed Pods Frameworks */,
+				DF87B1940C5D91C08AA8F0F8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,19 +231,79 @@
 				99766F541CCABC3E00971E1F /* LaunchScreen.storyboard in Resources */,
 				99766F511CCABC3E00971E1F /* Assets.xcassets in Resources */,
 				99766F4C1CCABC3E00971E1F /* Main.storyboard in Resources */,
+				99766F6B1CCBC20C00971E1F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A3855C704C208B2A32AAA61 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceAppsChallenge2016/Pods-SpaceAppsChallenge2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBE65695976C11FBC614900 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF87B1940C5D91C08AA8F0F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceAppsChallenge2016/Pods-SpaceAppsChallenge2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99766F3F1CCABC3E00971E1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99766F691CCBA95C00971E1F /* SensorViewController.swift in Sources */,
 				99766F4F1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodeld in Sources */,
-				99766F491CCABC3E00971E1F /* ViewController.swift in Sources */,
+				994429501CCBC82A000FF60D /* Sensors.swift in Sources */,
+				99766F621CCB55B300971E1F /* BluetoothDebugViewController.swift in Sources */,
+				9944295A1CCBF52E000FF60D /* SensorsTemp.swift in Sources */,
+				9944295C1CCC0298000FF60D /* HistoryViewController.swift in Sources */,
 				99766F471CCABC3E00971E1F /* AppDelegate.swift in Sources */,
+				994429521CCBD113000FF60D /* SeaIceTemp.swift in Sources */,
+				9944294E1CCBC82A000FF60D /* SeaIce.swift in Sources */,
+				994429581CCBEF42000FF60D /* MapViewController.swift in Sources */,
+				99766F641CCB55E200971E1F /* BluetoothSerial.swift in Sources */,
+				994429561CCBEE07000FF60D /* Annotation.swift in Sources */,
+				9944294F1CCBC82A000FF60D /* Sensors+CoreDataProperties.swift in Sources */,
+				9944294D1CCBC82A000FF60D /* SeaIce+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +414,7 @@
 		};
 		99766F591CCABC3E00971E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F8BE195F5E62B14716E7D0 /* Pods-SpaceAppsChallenge2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
@@ -262,6 +426,7 @@
 		};
 		99766F5A1CCABC3E00971E1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEA0D9A340F52A3962D1059 /* Pods-SpaceAppsChallenge2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
@@ -290,6 +455,7 @@
 				99766F5A1CCABC3E00971E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
