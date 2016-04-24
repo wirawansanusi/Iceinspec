@@ -9,10 +9,11 @@
 import UIKit
 import CoreBluetooth
 import MagicalRecord
+import MapKit
 
-class SensorViewController: UIViewController, BluetoothSerialDelegate {
+class SensorViewController: UIViewController, BluetoothSerialDelegate, MKMapViewDelegate {
     
-//MARK: IBActions
+//MARK: IBOutlets
     
     @IBOutlet weak var hum: UILabel!
     @IBOutlet weak var cel: UILabel!
@@ -22,26 +23,29 @@ class SensorViewController: UIViewController, BluetoothSerialDelegate {
     @IBOutlet weak var lat: UILabel!
     @IBOutlet weak var long: UILabel!
     @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     
 //MARK: Variables
     
-    /// The peripheral the user has selected
     var selectedPeripheral: CBPeripheral!
-    
     var selectedSensors: SensorsTemp?
+    let regionRadius: CLLocationDistance = 1000
     
 //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         serial.delegate = self
+        mapView.delegate = self
+        
+        centerMapOnLocation(CLLocation(latitude: latitude!, longitude: longitude!))
+        addAnnotationForDirection()
         
         if serial.state != .PoweredOn {
             title = "Bluetooth not turned on"
             return
         }
-        
         serial.connectToPeripheral(selectedPeripheral)
         NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(SensorViewController.connectTimeOut), userInfo: nil, repeats: false)
         
@@ -77,6 +81,43 @@ class SensorViewController: UIViewController, BluetoothSerialDelegate {
             print("Power on")
         } else {
         }
+    }
+    
+//MARK: MapKit
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func addAnnotationForDirection() {
+        
+        let annotation = Annotation(title: "Data will be save in this location",
+                                    locationName: "Data will be save in this location",
+                                    discipline: "Map",
+                                    coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!))
+        mapView.addAnnotation(annotation)
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if let annotation = annotation as? Annotation {
+            let identifier = "pin"
+            var view: MKPinAnnotationView
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+                as? MKPinAnnotationView { // 2
+                dequeuedView.annotation = annotation
+                view = dequeuedView
+            } else {
+                // 3
+                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
+            }
+            return view
+        }
+        return nil
     }
     
 //MARK: BluetoothSerialDelegate
@@ -122,6 +163,12 @@ class SensorViewController: UIViewController, BluetoothSerialDelegate {
         fetchData(humStr, cel: celStr, fah: fahStr, heat: heatStr, date: datetime)
     }
     
+    func serialDidConnect(peripheral: CBPeripheral) {
+        print(peripheral);
+    }
+    
+//MARK: MagicalRecord
+    
     func fetchData(hum: Float, cel: Float, fah: Float, heat: Float, date: NSDate) {
         
         var thickStr: Float = 0
@@ -129,15 +176,11 @@ class SensorViewController: UIViewController, BluetoothSerialDelegate {
         let predicate = NSPredicate(format: "temp = %d", cel)
         let seaIce = SeaIce.MR_findFirstWithPredicate(predicate)
         if let seaIceTemp = seaIce {
-            thick.text = "\(seaIceTemp.thick)"
+            thick.text = "\(seaIceTemp.thick) m"
             thickStr = seaIceTemp.thick!.floatValue
         }
         
         selectedSensors = SensorsTemp(cel: cel, fah: fah, heat: heat, hum: hum, lat: Float(latitude!), long: Float(longitude!), thick: thickStr, date: date)
-    }
-    
-    func serialDidConnect(peripheral: CBPeripheral) {
-        print(peripheral);
     }
     
 //MARK: IBActions

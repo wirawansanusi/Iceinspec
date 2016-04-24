@@ -39,7 +39,7 @@
 		994429571CCBEF42000FF60D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		994429591CCBF52E000FF60D /* SensorsTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTemp.swift; sourceTree = "<group>"; };
 		9944295B1CCC0298000FF60D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceAppsChallenge2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99766F431CCABC3E00971E1F /* Iceinspec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iceinspec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99766F461CCABC3E00971E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99766F4B1CCABC3E00971E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99766F4E1CCABC3E00971E1F /* SpaceAppsChallenge2016.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceAppsChallenge2016.xcdatamodel; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		99766F441CCABC3E00971E1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */,
+				99766F431CCABC3E00971E1F /* Iceinspec.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		99766F421CCABC3E00971E1F /* SpaceAppsChallenge2016 */ = {
+		99766F421CCABC3E00971E1F /* Iceinspec */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "SpaceAppsChallenge2016" */;
+			buildConfigurationList = 99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "Iceinspec" */;
 			buildPhases = (
 				5FBE65695976C11FBC614900 /* Check Pods Manifest.lock */,
 				99766F3F1CCABC3E00971E1F /* Sources */,
@@ -185,9 +185,9 @@
 			);
 			dependencies = (
 			);
-			name = SpaceAppsChallenge2016;
+			name = Iceinspec;
 			productName = SpaceAppsChallenge2016;
-			productReference = 99766F431CCABC3E00971E1F /* SpaceAppsChallenge2016.app */;
+			productReference = 99766F431CCABC3E00971E1F /* Iceinspec.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "SpaceAppsChallenge2016" */;
+			buildConfigurationList = 99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "Iceinspec" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99766F421CCABC3E00971E1F /* SpaceAppsChallenge2016 */,
+				99766F421CCABC3E00971E1F /* Iceinspec */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +420,7 @@
 				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SpaceAppsChallenge2016;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Iceinspec;
 			};
 			name = Debug;
 		};
@@ -432,14 +432,14 @@
 				INFOPLIST_FILE = SpaceAppsChallenge2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SpaceAppsChallenge2016;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Iceinspec;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "SpaceAppsChallenge2016" */ = {
+		99766F3E1CCABC3E00971E1F /* Build configuration list for PBXProject "Iceinspec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99766F561CCABC3E00971E1F /* Debug */,
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "SpaceAppsChallenge2016" */ = {
+		99766F581CCABC3E00971E1F /* Build configuration list for PBXNativeTarget "Iceinspec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99766F591CCABC3E00971E1F /* Debug */,

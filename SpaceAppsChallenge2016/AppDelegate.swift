@@ -17,11 +17,15 @@ var longitude: Double?
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
+//MARK: Variables
+    
     var window: UIWindow?
     var locationManager: CLLocationManager!
     var seenError : Bool = false
     var locationFixAchieved : Bool = false
     var locationStatus : NSString = "Not Started"
+    
+//MARK: Functions
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -45,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         locationManager.startMonitoringSignificantLocationChanges()
     }
     
-    // Location Manager Delegate stuff
+//MARK: CLLocationManagerDelegate
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         locationManager.stopUpdatingLocation()
@@ -90,6 +94,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             NSLog("Denied access: \(locationStatus)")
         }
     }
+    
+//MARK: Application state
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

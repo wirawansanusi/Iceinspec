@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "99766F421CCABC3E00971E1F"
-               BuildableName = "SpaceAppsChallenge2016.app"
-               BlueprintName = "SpaceAppsChallenge2016"
-               ReferencedContainer = "container:SpaceAppsChallenge2016.xcodeproj">
+               BuildableName = "Iceinspec.app"
+               BlueprintName = "Iceinspec"
+               ReferencedContainer = "container:Iceinspec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "99766F421CCABC3E00971E1F"
-            BuildableName = "SpaceAppsChallenge2016.app"
-            BlueprintName = "SpaceAppsChallenge2016"
-            ReferencedContainer = "container:SpaceAppsChallenge2016.xcodeproj">
+            BuildableName = "Iceinspec.app"
+            BlueprintName = "Iceinspec"
+            ReferencedContainer = "container:Iceinspec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "99766F421CCABC3E00971E1F"
-            BuildableName = "SpaceAppsChallenge2016.app"
-            BlueprintName = "SpaceAppsChallenge2016"
-            ReferencedContainer = "container:SpaceAppsChallenge2016.xcodeproj">
+            BuildableName = "Iceinspec.app"
+            BlueprintName = "Iceinspec"
+            ReferencedContainer = "container:Iceinspec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "99766F421CCABC3E00971E1F"
-            BuildableName = "SpaceAppsChallenge2016.app"
-            BlueprintName = "SpaceAppsChallenge2016"
-            ReferencedContainer = "container:SpaceAppsChallenge2016.xcodeproj">
+            BuildableName = "Iceinspec.app"
+            BlueprintName = "Iceinspec"
+            ReferencedContainer = "container:Iceinspec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

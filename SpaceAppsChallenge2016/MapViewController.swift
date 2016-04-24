@@ -11,8 +11,15 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
+//MARK: IBOutlets
+    
     @IBOutlet weak var mapView: MKMapView!
+    
+//MARK: Variables
+    
     let regionRadius: CLLocationDistance = 1000
+    
+//MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +27,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         centerMapOnLocation(CLLocation(latitude: latitude!, longitude: longitude!))
         addAnnotationForDirection()
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+//MARK: MapKit
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -36,7 +39,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func addAnnotationForDirection() {
         
-        let sensors = Sensors.MR_findAll() as! [Sensors]
+        let sensors = fetchData()
         
         for sensor in sensors {
             
@@ -71,31 +74,36 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         return nil
     }
+    
+//MARK: MagicalRecord
+    
+    func fetchData() -> [Sensors] {
+        
+        return Sensors.MR_findAll() as! [Sensors]
+    }
+    
+    /*
+     * In the future version we will replace this function with NSURLSession
+     * to get other users location from stored database on the web service
+     */
+    func fetchSampleData() -> Sensors {
+        
+        return Sensors.MR_findFirst()!
+    }
+    
+//MARK: IBActions
 
     @IBAction func didPressSync(sender: AnyObject) {
         
-        //55.662352, 12.596242
-        let sensor = Sensors.MR_findFirst()
-        
-        let datetime = sensor!.date
+        let sensor = fetchSampleData()
+        let datetime = sensor.date
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        let annotation = Annotation(title: "Temperature: \(sensor!.cel!) with thickness: \(sensor!.thick!)",
+        let annotation = Annotation(title: "Temperature: \(sensor.cel!) with thickness: \(sensor.thick!)",
                                     locationName: "Date: \(dateFormatter.stringFromDate(datetime!)) on Lat: \(55.662352) & Long: \(12.596242)) ",
                                     discipline: "Map",
                                     coordinate: CLLocationCoordinate2D(latitude: 55.662352, longitude: 12.596242))
         mapView.addAnnotation(annotation)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

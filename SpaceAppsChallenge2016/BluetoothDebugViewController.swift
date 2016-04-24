@@ -13,7 +13,7 @@ import SwiftyJSON
 
 class BluetoothDebugViewController: UITableViewController,  BluetoothSerialDelegate {
     
-//MARK: IBActions
+//MARK: IBOutlets
     
     @IBOutlet weak var scanBtn: UIBarButtonItem!
     
@@ -30,7 +30,10 @@ class BluetoothDebugViewController: UITableViewController,  BluetoothSerialDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //parseJSON()
+        let importedData = NSUserDefaults.standardUserDefaults().boolForKey("importedData")
+        if !importedData {
+            parseJSON()
+        }
         
         scanBtn.enabled = true
         serial = BluetoothSerial(delegate: self)
@@ -44,14 +47,12 @@ class BluetoothDebugViewController: UITableViewController,  BluetoothSerialDeleg
         NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(BluetoothDebugViewController.scanTimeOut), userInfo: nil, repeats: false)
     }
     
-    /// Should be called 10s after we've begun scanning
     func scanTimeOut() {
         // timeout has occurred, stop scanning and give the user the option to try again
         serial.stopScan()
         scanBtn.enabled = true
     }
     
-    /// Should be called 10s after we've begun connecting
     func connectTimeOut() {
         
         // don't if we've already connected
@@ -93,6 +94,7 @@ class BluetoothDebugViewController: UITableViewController,  BluetoothSerialDeleg
         }) { (contextDidSave: Bool, error: NSError?) -> Void in
             
             print("Data import success : \(contextDidSave)")
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "importedData")
         }
         
     }

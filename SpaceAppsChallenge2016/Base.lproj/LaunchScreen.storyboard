@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,75 +17,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-id-aqz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-id-aqz">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="735-rU-dCR"/>
-                                    <constraint firstAttribute="width" constant="180" id="iRp-5e-TZA"/>
+                                    <constraint firstAttribute="height" constant="180" id="UCI-5b-P8h"/>
+                                    <constraint firstAttribute="width" constant="180" id="b58-FX-Dha"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="735-rU-dCR"/>
-                                        <exclude reference="iRp-5e-TZA"/>
+                                        <exclude reference="UCI-5b-P8h"/>
+                                        <exclude reference="b58-FX-Dha"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="735-rU-dCR"/>
-                                        <include reference="iRp-5e-TZA"/>
+                                        <include reference="UCI-5b-P8h"/>
+                                        <include reference="b58-FX-Dha"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iceinspec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-Fz-jiD">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FTX-rg-4KQ"/>
+                                    <constraint firstAttribute="width" constant="180" id="F3j-Io-oI4"/>
+                                    <constraint firstAttribute="height" constant="50" id="Q1E-qx-sDl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.5568627451" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="FTX-rg-4KQ"/>
+                                        <exclude reference="F3j-Io-oI4"/>
+                                        <exclude reference="Q1E-qx-sDl"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="FTX-rg-4KQ"/>
+                                        <include reference="F3j-Io-oI4"/>
+                                        <include reference="Q1E-qx-sDl"/>
                                     </mask>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceapps" translatesAutoresizingMaskIntoConstraints="NO" id="wqV-wG-SOp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="G2v-dK-uTB"/>
+                                    <constraint firstAttribute="height" constant="100" id="qou-n8-JMG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="G2v-dK-uTB"/>
+                                        <exclude reference="qou-n8-JMG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="G2v-dK-uTB"/>
+                                        <include reference="qou-n8-JMG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mQf-id-aqz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5Sq-cm-GsC"/>
-                            <constraint firstItem="mQf-id-aqz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MmN-0h-MrQ"/>
-                            <constraint firstItem="eHj-Fz-jiD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="90" id="ro5-Wf-EZG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eHj-Fz-jiD" secondAttribute="trailing" constant="90" id="v9A-YH-o0f"/>
-                            <constraint firstItem="eHj-Fz-jiD" firstAttribute="top" secondItem="mQf-id-aqz" secondAttribute="bottom" constant="8" id="vuX-dd-T4V"/>
+                            <constraint firstItem="wqV-wG-SOp" firstAttribute="top" secondItem="eHj-Fz-jiD" secondAttribute="bottom" constant="28" id="Fhh-rl-dG6"/>
+                            <constraint firstItem="eHj-Fz-jiD" firstAttribute="top" secondItem="mQf-id-aqz" secondAttribute="bottom" constant="8" id="ctu-82-7TS"/>
+                            <constraint firstItem="mQf-id-aqz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="197" id="jhX-YV-XvE"/>
+                            <constraint firstItem="eHj-Fz-jiD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lS7-1W-6qg"/>
+                            <constraint firstItem="mQf-id-aqz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="or0-tO-Cgk"/>
+                            <constraint firstItem="wqV-wG-SOp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qNQ-Lw-g7k"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="eHj-Fz-jiD"/>
+                                <exclude reference="wqV-wG-SOp"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5Sq-cm-GsC"/>
-                                <exclude reference="MmN-0h-MrQ"/>
-                                <exclude reference="ro5-Wf-EZG"/>
-                                <exclude reference="v9A-YH-o0f"/>
-                                <exclude reference="vuX-dd-T4V"/>
+                                <exclude reference="jhX-YV-XvE"/>
+                                <exclude reference="or0-tO-Cgk"/>
+                                <exclude reference="ctu-82-7TS"/>
+                                <exclude reference="lS7-1W-6qg"/>
+                                <exclude reference="Fhh-rl-dG6"/>
+                                <exclude reference="qNQ-Lw-g7k"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="eHj-Fz-jiD"/>
+                                <include reference="wqV-wG-SOp"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5Sq-cm-GsC"/>
-                                <include reference="MmN-0h-MrQ"/>
-                                <include reference="ro5-Wf-EZG"/>
-                                <include reference="v9A-YH-o0f"/>
-                                <include reference="vuX-dd-T4V"/>
+                                <include reference="jhX-YV-XvE"/>
+                                <include reference="or0-tO-Cgk"/>
+                                <include reference="ctu-82-7TS"/>
+                                <include reference="lS7-1W-6qg"/>
+                                <include reference="Fhh-rl-dG6"/>
+                                <include reference="qNQ-Lw-g7k"/>
                             </mask>
                         </variation>
                     </view>
@@ -98,5 +124,6 @@
     </scenes>
     <resources>
         <image name="logo" width="180" height="180"/>
+        <image name="spaceapps" width="760" height="380"/>
     </resources>
 </document>

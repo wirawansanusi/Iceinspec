@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SpaceAppsChallenge2016.xcodeproj">
+      location = "group:/Users/wirawansanusi/Documents/Programming/SpaceAppsChallenge2016/Iceinspec.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

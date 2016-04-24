@@ -10,9 +10,17 @@ import UIKit
 
 class HistoryViewController: UITableViewController {
 
+//MARK: Variables
+    
     var sensors = [Sensors]()
     
+//MARK: Functions
+    
     override func viewDidLoad() {
+        fetchSensors()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         fetchSensors()
     }
     
@@ -21,6 +29,8 @@ class HistoryViewController: UITableViewController {
         self.sensors = sensors
         tableView.reloadData()
     }
+    
+//MARK: UITableViewDataSource
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
